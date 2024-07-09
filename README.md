@@ -1,4 +1,5 @@
-##Encryption Text App
+#Encryption Text Web Page
+
 Overview
 This application provides a simple interface to encrypt and decrypt text using an encryption algorithms. It's designed to demonstrate basic encryption techniques and can be used as a learning tool or for securing sensitive text messages.
 
