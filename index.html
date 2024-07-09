@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un encriptador de texto es una herramienta diseñada para proteger 
+    la confidencialidad de la información textual mediante la conversión de texto legible en un formato 
+    codificado, utilizando algoritmos criptográficos. Este proceso asegura que solo las personas autorizadas,
+     que poseen la clave de desencriptación adecuada, puedan leer el contenido original." />
+    <meta name="keywords" content="encriptador, texto, cifrado, algoritmo, seguridad">
+    <meta name="author" content="Rommel Gutierrez">
+    <title>Encriptador de texto</title>
+
+    <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript File -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main id="home">
+        <section id="homeLeft">
+                <div id="homeLogo">
+                    <img src="./logo.png" alt="Logo Alura"/>
+                </div>
+                <textarea id="inputText" name="inputText" placeholder="Ingrese el texto aquí"></textarea>
+                <p id="warningText"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>  Solo letras minúsculas y sin acentos</p>
+                <div id="buttonsLeft">
+                    <button id="btnCifrar" onclick="encryptText()">Encriptar</button>
+                    <button id="btnDescifrar" onclick="decryptText()">Desencriptar</button>
+                </div>
+               
+        </section>
+        <section id="homeRight">
+            <div id="resultScreen">
+                <img id="personaImg" src="./persona.png" alt="Persona con una lupa"/>
+                <h3 id="nothingText">Ningún mensaje fue encontrado</h3>
+                <p id="resultText">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button id="copyButton" onclick="copyToClipboard()">Copiar</button>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rommel Gutiérrez. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,175 @@
+body{
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F5FC;
+    color: #0A3871;
+}
+#home{
+    display: flex;
+    width: 100%;
+
+}
+#homeLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 90vh;
+}
+#homeLogo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+#homeLogo img{
+    width: 10%;
+}
+#homeLeft textarea{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    height: 80%;
+    width: 80%;
+    resize: none;
+    color: #0A3871;
+}
+#homeLeft textarea::placeholder{
+    color: #0A3871;
+}
+#warningText{
+    font-size: 12px;
+    margin-left: 5%;
+    align-self: baseline;
+    color:#495057;
+}
+#buttonsLeft{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1% 10%;
+}
+button{
+    width: 328px ;
+    height: 67px;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+}
+#btnCifrar{
+    margin-left: 10%;
+    background-color: #0A3871;
+    color:white;
+    border: #0A3871;
+
+}
+#btnDescifrar{
+    background-color: #D8DFE8;
+    color:#0A3871;
+    border-color: 1px solid #0A3871;
+    
+}
+
+#homeRight{
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#resultScreen{
+    margin-top: 10%;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+#resultScreen img{
+    margin-top: 20%;
+   
+}
+#nothingText{
+    font-size: 24px;
+}
+#resultText{
+    font-size: 16px;
+    max-height: 90%;
+    padding: 20px;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+#copyButton{
+    position: absolute;
+    bottom: 5%;
+    display: none;
+}
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+/* Tablets (landscape and portrait) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #home{
+        display:block;
+        width: 100%;
+    }
+    #homeLeft{
+        width: 100%;
+        height: 60vh;
+    }
+    #resultScreen img{
+        display: none;
+    }
+    #homeRight{
+        width: 100%;
+        height: 30vh;
+    }
+    #resultScreen{
+        width: 90%;
+    }
+  }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #home{
+        display:block;
+        width: 100%;
+    }
+    #homeLeft{
+        width: 100%;
+        height: 60vh;
+    }
+    #resultScreen img{
+        display: none;
+    }
+    #homeRight{
+        width: 100%;
+        height: 30vh;
+    }
+    #resultScreen{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    #resultScreen p{
+        padding: 20px;
+        max-height: 40%;
+        overflow-y: auto;
+    }
+    #buttonsLeft{
+        display: block;
+        text-align: center;
+    }
+    #btnCifrar{
+        margin-left: 0px;
+        margin-bottom: 10px;
+    
+    }
+    
+}
