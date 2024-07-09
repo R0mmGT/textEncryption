@@ -5,7 +5,7 @@ This application provides a simple interface to encrypt and decrypt text using a
 Installation
 To run the application locally:
 
-Clone the repository: git clon https://github.com/R0mmGT/textEncryption.git
+Clone the repository: git clone https://github.com/R0mmGT/textEncryption.git
 Start a live server and the application.
 
 Contributing
